@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import About from "./component/About";
+import Home from "./component/Home"
+import Nav from "./component/Nav"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+   return(
+   <div>   
+     <Home />
+     <About />
+     <Nav />
+  </div>
+)
+  
 }
 
-export default App
+export default App;
+
+// const App=()=>{
+//   let data = "data from the server";
+//   let subject=["math","English","science"];
+//   let profile={
+//     name:"John Doe",
+//     age:25,
+//     email:"john@doe.com",
+//   };
+//   return(
+//        <div>
+//         <h1> {data} </h1>
+//         <h2> {subject} </h2>
+//         <h3> {profile.name} </h3>
+//         <h4> {profile.age} </h4>
+//         <h5> {profile.email} </h5>
+//        </div>
+//   )
+// }
+//  export default App;
